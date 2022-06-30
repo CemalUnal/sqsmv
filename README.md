@@ -26,11 +26,11 @@ environment variables must be set.
 
 Supply source and destination URL endpoints.
 
-    sqsmv -src https://region.queue.amazonaws.com/123/queue-a -dest https://region.queue.amazonaws.com/123/queue-b
+    sqsmv -src https://region.queue.amazonaws.com/123/queue-a -dest https://region.queue.amazonaws.com/123/queue-b -src-region us-east-1 -dest-region eu-west-1
 
 To run jobs in parallel, use -clients parameter:
 
-    sqsmv -src https://region.queue.amazonaws.com/123/queue-a -dest https://region.queue.amazonaws.com/123/queue-b -clients 8
+    sqsmv -src https://region.queue.amazonaws.com/123/queue-a -dest https://region.queue.amazonaws.com/123/queue-b -src-region us-east-1 -dest-region eu-west-1 -clients 8
 
 ## Seeing is believing :)
 
